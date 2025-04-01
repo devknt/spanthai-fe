@@ -11,7 +11,7 @@ import { useMediaQuery } from "@/hooks/useMediaQuery";
 import ImgDessert from "@/public/pic/MangoStickyRice.jpg"
 import ImgDrink from "@/public/pic/Drink.jpg"
 import ImgRice from "@/public/pic/Rice.jpg"
-import ImgNoodle from "@/public/pic/Noodle.jpg"
+import ImgEntree from "@/public/pic/SpringRolls.png"
 
 type Props = {
   pb?: "md" | "xl";
@@ -39,15 +39,15 @@ export default function Categories({ pb = "md", pt = "md" }: Props) {
           <CategoryTile
             tabId={3}
             span={2}
-            title={"Rice"}
+            title={"Main"}
             imgSrc={ImgRice}
             width={384}
             height={682}
           />
           <CategoryTile
             tabId={0}
-            title={"Noodle"}
-            imgSrc={ImgNoodle}
+            title={"Entree"}
+            imgSrc={ImgEntree}
             width={384}
             height={256}
           />

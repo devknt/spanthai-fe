@@ -12,43 +12,45 @@ import "swiper/css/navigation";
 import { paddingBot, paddingTop } from "@/utils/props";
 import clsx from "clsx";
 import ZigzagSVG from "@/components/svg/ZigzagSVG";
-import ImgRice1 from "@/public/pic/FiredRice.jpg"
-import ImgRice2 from "@/public/pic/Rice.jpg"
+import ImgEntree1 from "@/public/pic/SpringRolls.png"
+import ImgEntree2 from "@/public/pic/SchoolPrawns.png"
+import ImgDessert1 from "@/public/pic/IceCreamStick.png"
+import ImgDessert2 from "@/public/pic/MangoStickyRice.jpg"
 
 const products = [
   {
     id: 1,
     price: 18,
     category: "entree",
-    imgScr: ImgRice1,
+    imgScr: ImgEntree1,
     title: "Spring Roll",
-    description: "Soy sauce-based broth, chicken, nori, menma, scallions",
+    description: "",
   },
   {
     id: 2,
     price: 20,
     category: "entree",
-    imgScr: ImgRice2,
+    imgScr: ImgEntree2,
     title: "School Prawns",
     description:
-      "Rich pork broth, pork belly, soft-boiled egg, bamboo shoots, green onions",
+      "",
   },
   {
     id: 3,
     price: 22,
-    category: "entree",
-    imgScr: ImgRice1,
-    title: "Entree 3",
+    category: "dessert",
+    imgScr: ImgDessert1,
+    title: "Fried Ice Cream on A Stick",
     description:
       "",
   },
   {
     id: 4,
     price: 24,
-    category: "entree",
-    imgScr: ImgRice2,
-    title: "Rice 4",
-    description: "Spicy broth, mixed seafood, mushrooms, bok choy, red ginger",
+    category: "dessert",
+    imgScr: ImgDessert2,
+    title: "Mango Sticky Rice",
+    description: "",
   },
 ];
 

@@ -56,7 +56,7 @@ const menu = {
       id: 5,
       price: 23,
       category: "main",
-      title: "Chilli Basil",
+      title: "Green Curry",
       description: "",
     },
     {
@@ -77,7 +77,7 @@ const menu = {
       id: 8,
       price: 23,
       category: "main",
-      title: "Wings",
+      title: "Chicken Wings",
       description: "",
     },
     {
