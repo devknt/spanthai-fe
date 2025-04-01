@@ -12,14 +12,22 @@ import "swiper/css/navigation";
 import { paddingBot, paddingTop } from "@/utils/props";
 import clsx from "clsx";
 import ZigzagSVG from "@/components/svg/ZigzagSVG";
-import ImgEntree1 from "@/public/pic/SpringRolls.png"
-import ImgEntree2 from "@/public/pic/SchoolPrawns.png"
-import ImgDessert1 from "@/public/pic/IceCreamStick.png"
-import ImgDessert2 from "@/public/pic/MangoStickyRice.jpg"
+import ImgEntree1 from "@/public/pic/SpringRolls.png";
+import ImgEntree2 from "@/public/pic/SchoolPrawns.png";
+import ImgDessert1 from "@/public/pic/IceCreamStick.png";
+import ImgDessert2 from "@/public/pic/MangoStickyRice.jpg";
 
 const products = [
   {
     id: 1,
+    price: 10,
+    category: "dessert",
+    imgScr: ImgDessert1,
+    title: "Fried Ice Cream on A Stick",
+    description: "",
+  },
+  {
+    id: 2,
     price: 18,
     category: "entree",
     imgScr: ImgEntree1,
@@ -27,29 +35,19 @@ const products = [
     description: "",
   },
   {
-    id: 2,
+    id: 3,
+    price: 18,
+    category: "dessert",
+    imgScr: ImgDessert2,
+    title: "Mango Sticky Rice",
+    description: "",
+  },
+  {
+    id: 4,
     price: 20,
     category: "entree",
     imgScr: ImgEntree2,
     title: "School Prawns",
-    description:
-      "",
-  },
-  {
-    id: 3,
-    price: 22,
-    category: "dessert",
-    imgScr: ImgDessert1,
-    title: "Fried Ice Cream on A Stick",
-    description:
-      "",
-  },
-  {
-    id: 4,
-    price: 24,
-    category: "dessert",
-    imgScr: ImgDessert2,
-    title: "Mango Sticky Rice",
     description: "",
   },
 ];
