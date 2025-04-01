@@ -2,7 +2,7 @@
 import React, { useEffect, useState } from "react";
 import Button from "@/components/ui/Button";
 import bg from "@/public/pic/truck.jpg";
-import logo from "@/public/pic/SpanThai-Logo.png";
+import logo from "@/public/pic/logo.png";
 import Link from "next/link";
 import Image from "next/image";
 import { useAnimation, motion } from "framer-motion";
@@ -83,7 +83,7 @@ export default function Hero() {
                 variant={"top-sm"}
               >
                 {/* <LogoSVG width={150} height={150} /> */}
-                <Image width={250} height={250} src={logo} alt="logo" />
+                <Image width={200} height={200} src={logo} alt="logo" />
               </Animated>
               <Animated
                 as="h1"

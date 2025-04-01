@@ -29,8 +29,8 @@ export default function Product({
         </h2>
         <p className="mb-5">{description}</p>
         <p className="text-3xl font-semibold">
-          {price}.-
-          <span className="ml-2 text-xl font-normal">AUD</span>
+          {/* {price}.- */}
+          <span className="ml-2 text-xl font-normal"></span>
         </p>
       </div>
 
