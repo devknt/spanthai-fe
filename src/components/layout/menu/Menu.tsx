@@ -6,18 +6,29 @@ import clsx from "clsx";
 import React, { useEffect, useState } from "react";
 import useMenuTabsStore from "../../../stores/useMenuTabsStore";
 
+const pathPic = "/pic/menu/";
 const menu = {
   entree: [
     {
       id: 1,
-      title: "Spring Roll",
+      title: "Veggie Spring Roll",
+      pic: pathPic + "spring-roll.png",
       price: 30,
       category: "entree",
       description: "",
     },
     {
       id: 2,
+      title: "Veggie Curry Puff",
+      pic: pathPic + "curry-puff.png",
+      price: 30,
+      category: "entree",
+      description: "",
+    },
+    {
+      id: 3,
       title: "School Prawns",
+      pic: pathPic + "school-prawn.png",
       price: 45,
       category: "entree",
       description: "",
@@ -29,6 +40,7 @@ const menu = {
       price: 23,
       category: "main",
       title: "Pad Thai",
+      pic: pathPic + "pic.png",
       description: "",
     },
     {
@@ -36,6 +48,7 @@ const menu = {
       price: 23,
       category: "main",
       title: "Pad See Ew",
+      pic: pathPic + "pic.png",
       description: "",
     },
     {
@@ -43,6 +56,7 @@ const menu = {
       price: 23,
       category: "main",
       title: "Fried Rice",
+      pic: pathPic + "pic.png",
       description: "",
     },
     {
@@ -50,6 +64,7 @@ const menu = {
       price: 23,
       category: "main",
       title: "Chilli Basil",
+      pic: pathPic + "pic.png",
       description: "",
     },
     {
@@ -57,6 +72,7 @@ const menu = {
       price: 23,
       category: "main",
       title: "Green Curry",
+      pic: pathPic + "pic.png",
       description: "",
     },
     {
@@ -64,48 +80,47 @@ const menu = {
       price: 23,
       category: "main",
       title: "Massaman Curry",
+      pic: pathPic + "pic.png",
       description: "",
     },
     {
       id: 7,
       price: 23,
       category: "main",
-      title: "Som Tum",
+      title: "Som Tum & Wings",
+      pic: pathPic + "pic.png",
       description: "",
     },
     {
       id: 8,
       price: 23,
       category: "main",
-      title: "Chicken Wings",
+      title: "Hokkien Noodles",
+      pic: pathPic + "pic.png",
       description: "",
     },
     {
       id: 9,
       price: 23,
       category: "main",
-      title: "Hokkien Noodles",
+      title: "Chicken & Chorizo Paella (GF)",
+      pic: pathPic + "pic.png",
       description: "",
     },
     {
       id: 10,
       price: 23,
       category: "main",
-      title: "Chicken & Chorizo Paella (GF)",
+      title: "Chicken Pad Thai Rice Noodles",
+      pic: pathPic + "pic.png",
       description: "",
     },
     {
       id: 11,
       price: 23,
       category: "main",
-      title: "Chicken Pad Thai Rice Noodles",
-      description: "",
-    },
-    {
-      id: 12,
-      price: 23,
-      category: "main",
       title: "Garlic Chicken",
+      pic: pathPic + "pic.png",
       description: "",
     },
   ],
@@ -115,6 +130,7 @@ const menu = {
       price: 23,
       category: "dessert",
       title: "Fried Ice Cream on A Stick",
+      pic: pathPic + "pic.png",
       description: "",
     },
     {
@@ -122,6 +138,7 @@ const menu = {
       price: 23,
       category: "dessert",
       title: "Mango Sticky Rice",
+      pic: pathPic + "pic.png",
       description: "",
     },
   ],
@@ -131,6 +148,7 @@ const menu = {
       price: 23,
       category: "drink",
       title: "Lemon Ice Tea",
+      pic: pathPic + "pic.png",
       description: "",
     },
   ],
@@ -164,39 +182,43 @@ export default function Menu({ pb = "md", pt = "md" }: Props) {
         <TabsProduct tab={tab} setTab={setTab} />
 
         {tab == 0 &&
-          menu.entree?.map(({ id, price, title, description }) => (
+          menu.entree?.map(({ id, price, title, description, pic }) => (
             <MenuItem
               key={id}
               title={title}
               description={description}
               price={price}
+              pic={pic}
             />
           ))}
         {tab == 1 &&
-          menu.main?.map(({ id, price, title, description }) => (
+          menu.main?.map(({ id, price, title, description, pic }) => (
             <MenuItem
               key={id}
               title={title}
               description={description}
               price={price}
+              pic={pic}
             />
           ))}
         {tab == 2 &&
-          menu.dessert?.map(({ id, price, title, description }) => (
+          menu.dessert?.map(({ id, price, title, description, pic }) => (
             <MenuItem
               key={id}
               title={title}
               description={description}
               price={price}
+              pic={pic}
             />
           ))}
         {tab == 3 &&
-          menu.drink?.map(({ id, price, title, description }) => (
+          menu.drink?.map(({ id, price, title, description, pic }) => (
             <MenuItem
               key={id}
               title={title}
               description={description}
               price={price}
+              pic={pic}
             />
           ))}
       </div>

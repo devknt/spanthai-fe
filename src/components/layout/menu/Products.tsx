@@ -31,7 +31,7 @@ const products = [
     price: 18,
     category: "entree",
     imgScr: ImgEntree1,
-    title: "Spring Roll",
+    title: "Veggie Spring Roll",
     description: "",
   },
   {
