@@ -16,6 +16,9 @@ import ImgEntree1 from "@/public/pic/SpringRolls.png";
 import ImgEntree2 from "@/public/pic/SchoolPrawns.png";
 import ImgDessert1 from "@/public/pic/IceCreamStick.png";
 import ImgDessert2 from "@/public/pic/MangoStickyRice.jpg";
+import ImgMain1 from "@/public/pic/PadThai.jpeg";
+import ImgMain2 from "@/public/pic/PadSeeEw.jpeg";
+import ImgMain3 from "@/public/pic/ChorizoPaella.jpeg";
 
 const products = [
   {
@@ -48,6 +51,30 @@ const products = [
     category: "entree",
     imgScr: ImgEntree2,
     title: "School Prawns",
+    description: "",
+  },
+  {
+    id: 5,
+    price: 20,
+    category: "main",
+    imgScr: ImgMain3,
+    title: "Chicken & Chorizo Paella (GF)",
+    description: "",
+  },
+  {
+    id: 6,
+    price: 20,
+    category: "main",
+    imgScr: ImgMain1,
+    title: "Pad Thai",
+    description: "",
+  },
+  {
+    id: 7,
+    price: 20,
+    category: "main",
+    imgScr: ImgMain2,
+    title: "Pad See Ew",
     description: "",
   },
 ];

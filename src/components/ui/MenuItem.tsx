@@ -15,7 +15,7 @@ export default function MenuItem({ price, title, description, pic }: Props) {
           <img
             src={pic}
             alt=""
-            className=" w-[10%] rounded-lg"
+            className=" w-32 rounded-lg"
           />
           <h3 className="mb-2 ml-5 text-xl font-medium">{title}</h3>
         </div>

@@ -1,7 +1,7 @@
 "use client";
 import React, { useEffect, useState } from "react";
 import Button from "@/components/ui/Button";
-import bg from "@/public/pic/truck.jpg";
+import bg from "@/public/pic/spanthai-truck.jpg";
 import logo from "@/public/pic/logo.png";
 import Link from "next/link";
 import Image from "next/image";

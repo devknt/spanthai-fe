@@ -35,7 +35,11 @@ export default function Footer() {
           </div>
           <span className="text-sm text-neutral-500 sm:text-center dark:text-neutral-400">
             © 2025 SpanThai All Rights Reserved. Created by{" "}
-            <Link className="hover:underline" href={"https://kwanative.com"}>
+            <Link
+              target="_blank"
+              className="hover:underline"
+              href={"https://kwanative.com"}
+            >
               kwanative
             </Link>
           </span>
