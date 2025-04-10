@@ -96,7 +96,7 @@ export default function Contact() {
                   className="truncate w-fit text-neutral-400"
                   href={"mailto:spanthai@yahoo.com"}
                 >
-                  spanthai@yahoo.com
+                  spanthai@yahoo.com.au
                 </Link>
               </div>
             </address>
